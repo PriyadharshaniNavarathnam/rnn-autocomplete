@@ -11,15 +11,23 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          lfs: true
 
-      - name: Push to Hugging Face
+      - name: Push only app files to Hugging Face
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
           git config --global user.email "deploy@github.com"
           git config --global user.name "GitHub Deploy"
-          git remote add hf https://PriyadharshaniNavarathnam:$HF_TOKEN@huggingface.co/spaces/Priyadharshani21/rnn-autocomplete
-          git push hf main --force
+          
+          # Clone the HF space
+          git clone https://Priyadharshani21:$HF_TOKEN@huggingface.co/spaces/Priyadharshani21/rnn-autocomplete hf_space
+          
+          # Copy only the files HF needs
+          cp app.py hf_space/app.py
+          cp requirements.txt hf_space/requirements.txt
+          
+          # Push to HF
+          cd hf_space
+          git add app.py requirements.txt
+          git commit -m "deploy from github" --allow-empty
+          git push
