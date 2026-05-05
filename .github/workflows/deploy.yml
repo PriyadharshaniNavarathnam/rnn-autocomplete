@@ -1,0 +1,25 @@
+name: Deploy to Hugging Face Spaces
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          lfs: true
+
+      - name: Push to Hugging Face
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          git config --global user.email "deploy@github.com"
+          git config --global user.name "GitHub Deploy"
+          git remote add hf https://PriyadharshaniNavarathnam:$HF_TOKEN@huggingface.co/spaces/Priyadharshani21/rnn-autocomplete
+          git push hf main --force
