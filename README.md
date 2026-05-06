@@ -19,6 +19,7 @@ A character-level LSTM model trained on 8,800+ English words that predicts and a
 |  **Model** | [project-rnn-model](https://huggingface.co/Priyadharshani21/project-rnn-model) |
 
 ---
+<img width="886" height="799" alt="image" src="https://github.com/user-attachments/assets/8cf1de30-36a9-49e8-92ed-677d37692186" />
 
 ##  Project Structure
 
