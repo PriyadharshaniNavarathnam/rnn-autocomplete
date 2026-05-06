@@ -1,4 +1,4 @@
-# 🧠 RNN Word Autocomplete
+#  RNN Word Autocomplete
 
 A character-level LSTM model trained on 8,800+ English words that predicts and autocompletes words in real time.
 
@@ -10,17 +10,17 @@ A character-level LSTM model trained on 8,800+ English words that predicts and a
 
 ---
 
-## 🔗 Live Demo
+##  Live Demo
 
 | | URL |
 |---|---|
-| 🎨 **Frontend** | [rnn-autocomplete-ui](https://huggingface.co/spaces/Priyadharshani21/rnn-autocomplete-ui) |
-| 🔧 **Backend API** | [rnn-autocomplete-api](https://huggingface.co/spaces/Priyadharshani21/rnn-autocomplete-api) |
-| 📦 **Model** | [project-rnn-model](https://huggingface.co/Priyadharshani21/project-rnn-model) |
+|  **Frontend** | [rnn-autocomplete-ui](https://huggingface.co/spaces/Priyadharshani21/rnn-autocomplete-ui) |
+|  **Backend API** | [rnn-autocomplete-api](https://huggingface.co/spaces/Priyadharshani21/rnn-autocomplete-api) |
+|  **Model** | [project-rnn-model](https://huggingface.co/Priyadharshani21/project-rnn-model) |
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 Project_RNN/
@@ -42,7 +42,7 @@ Project_RNN/
 
 ---
 
-## 🧠 Model Architecture
+##  Model Architecture
 
 | Parameter | Value |
 |---|---|
@@ -59,7 +59,7 @@ The model takes a character prefix as input and predicts the next character one 
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Python 3.11+
@@ -93,7 +93,7 @@ Then open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ---
 
-## 🔌 API Endpoints
+##  API Endpoints
 
 ### `GET /`
 Health check
@@ -125,7 +125,7 @@ Get suggestions for multiple prefixes at once.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -137,7 +137,7 @@ Get suggestions for multiple prefixes at once.
 
 ---
 
-## 📦 Deployment
+##  Deployment
 
 The app is deployed on **HuggingFace Spaces**:
 
@@ -147,7 +147,7 @@ The app is deployed on **HuggingFace Spaces**:
 
 ---
 
-## 👩‍💻 Author
+##  Author
 
 **Priyadharshani Navarathnam**
 - GitHub: [@PriyadharshaniNavarathnam](https://github.com/PriyadharshaniNavarathnam)
